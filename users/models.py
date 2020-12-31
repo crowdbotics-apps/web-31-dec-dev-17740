@@ -23,6 +23,25 @@ class User(AbstractUser):
         blank=True,
         max_length=255,
     )
+    first_name_test_length = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
+
+    def get_absolute_url(self):
+        return reverse("users:detail", kwargs={"username": self.username})
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
